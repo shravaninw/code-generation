@@ -1,11 +1,9 @@
 // 1
-import 'package:annotations/annotations.dart';
 
 // 2
+import 'package:annotations/annotations.dart';
+
 part 'operators.g.dart';
 
-@addition
-@multiplication
-@divison
-@subraction
-abstract class Operator {}
+@OperationAnnotation(addition: true, multiplication: true)
+class Operator {}

@@ -1,4 +1,3 @@
-import 'package:example/add.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -48,14 +47,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-int sum() {
-  final AddImpl addImpl = AddImpl();
-
-  return addImpl.add(7, 8);
-}
-
 class _MyHomePageState extends State<MyHomePage> {
-  final int su = sum();
   int _counter = 0;
 
   void _incrementCounter() {
@@ -71,8 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    print(su);
-
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
